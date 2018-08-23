@@ -540,14 +540,30 @@ header {
 }
 
 .help-text a {
-  text-decoration: underline;
   color: #cc3300;
+  position: relative;
+  text-decoration: none !important;
+}
+.help-text a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #cc3300;
+  bottom: 0;
+  left: -1px;
+}
+.help-text a:hover {
+  opacity: 0.5;
 }
 
 .container-sponsor {
   display: flex;
   height: 100%;
-  margin-bottom: 50px;
+  max-width: 1187px;
+  margin: auto;
+  margin-top: 42px;
+  margin-bottom: 51px;
 }
 
 .container-news {
@@ -569,13 +585,11 @@ header {
   width: 50%;
   border-radius: 5px;
   border: 2px solid #006666;
-  padding: 45px;
+  padding: 35px;
   margin: 15px;
 }
 
 .sponsor-row {
-  padding-top: 60px;
-  padding-bottom: 70px;
 }
 
 .sponsor .sponsor-text {
@@ -585,6 +599,12 @@ header {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.9px;
+  width: 60%;
+}
+
+.sponsor .sponsor-img {
+  width: 30%;
+  margin-right: 40px;
 }
 
 .sponsor .sponsor-img img {
@@ -601,6 +621,7 @@ header {
 
 .footer a {
   color: #fff;
+  text-decoration: underline;
 }
 
 .footer-row {
@@ -652,6 +673,9 @@ header {
   padding-bottom: 40px;
   line-height: 30px;
 }
+.footer-link-main a:hover {
+  opacity: 0.5;
+}
 
 .footer-link {
   padding-bottom: 45px;
@@ -667,8 +691,9 @@ header {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 20px 30px;
+  padding: 17px 46px;
   text-align: center;
+  transition: all 300ms ease;
 }
 
 .footer .btn-footer:hover {
@@ -679,6 +704,9 @@ header {
 .footer-copy {
   padding-top: 35px;
   padding-bottom: 26px;
+}
+.footer-copy img:hover {
+  opacity: 0.5;
 }
 
 .footer-copy p {
