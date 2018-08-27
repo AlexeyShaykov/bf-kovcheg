@@ -23,7 +23,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Oswald:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="container">
 			<div class="row logo-line">
 				<div class="col-lg-2 col-md-3 col-sm-6 logo"><img src="img/found_logo.png" alt="Логотип фонда"></div>
@@ -42,19 +42,19 @@
 					<nav id="main-nav">
 						<ul>
 							<li><a href="#">главная</a></li>
-							<li><a id="menu-projects" href="#">наши проекты</a>
+							<li><a id="menu-projects" href="#our-projects">наши проекты</a>
 								<ul>
-									<li><a href="#">милосердие</a></li>
-									<li><a href="#">сестричество милосердия</a></li>
-									<li><a href="#">помощь бездомным</a></li>
-									<li><a href="#">ты не одна</a></li>
-									<li><a href="#">матрёшка</a></li>
-									<li><a href="#">радость моя</a></li>
+									<li><a href="#our-projects">милосердие</a></li>
+									<li><a href="#our-projects">сестричество милосердия</a></li>
+									<li><a href="#our-projects">помощь бездомным</a></li>
+									<li><a href="#our-projects">ты не одна</a></li>
+									<li><a href="#our-projects">матрёшка</a></li>
+									<li><a href="#our-projects">радость моя</a></li>
 								</ul></li>
-								<li><a href="#">новости</a></li>
-								<li><a href="#">волонтёрство</a></li>
+								<li><a href="#our-news">новости</a></li>
+								<li><a href="#volunteer">волонтёрство</a></li>
 								<li><a href="#">о нас</a></li>
-								<li><a href="#">как помочь</a></li>
+								<li><a href="#help-info">как помочь</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -69,7 +69,7 @@
 				</div>
 			</div>
 		</header>
-		<section>
+		<section id="our-projects">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -173,7 +173,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section-news">
+		<section class="section-news" id="our-news">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -231,7 +231,7 @@
 					</div>
 				</div>
 		</section>
-		<section>
+		<section id="volunteer">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -246,7 +246,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="section-title">
+						<div class="section-title" id="help-info">
 							<p>как помочь</p>
 						</div>
 					</div>
@@ -313,12 +313,12 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-12 footer-right">
 						<div class="footer-link-main">
-							<a href="#">главная</a><BR>
-							<a href="#">наши проекты</a><BR>
-							<a href="#">новости</a><BR>
-							<a href="#">волонтёрство</a><BR>
+							<a href="#header">главная</a><BR>
+							<a href="#our-projects">наши проекты</a><BR>
+							<a href="#our-news">новости</a><BR>
+							<a href="#volunteer">волонтёрство</a><BR>
 							<a href="#">о нас</a><BR>
-							<a href="#">как помочь</a><BR>
+							<a href="#help-info">как помочь</a><BR>
 						</div>
 						<div class="footer-link">
 							<a href="#">Документы</a><BR>
@@ -338,7 +338,7 @@
 					<div class="col-11">
 						<p class="footer-text">&copy 2016-2017 Нижнетагильская епархия Русской Православной Церкви</p>
 					</div>
-					<div class="col-1"><a href="#"><img src="img/on_top_icon.png" alt=""></a></div>
+					<div class="col-1"><a href="#header"><img src="img/on_top_icon.png" alt=""></a></div>
 				</div></div>
 
 			</footer>
@@ -346,5 +346,29 @@
 			<script>
 			new WOW().init();
 </script>
-		</body>
-		</html>
+			<script src="js/jquery.min.js"></script>
+			<script>
+			$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (
+      location.pathname.replace(/^\//, '') ==
+        this.pathname.replace(/^\//, '') &&
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate(
+          {
+            scrollTop: target.offset().top
+          },
+          1000
+        );
+        return false;
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
