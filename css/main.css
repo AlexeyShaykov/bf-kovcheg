@@ -2,6 +2,13 @@
   margin: 0;
 }
 
+#slideshow {
+  width: 1136px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+}
+
 header {
   background: url('../img/firstscreen_bg.jpg');
   height: 720px;
@@ -366,6 +373,8 @@ header {
   width: 50%;
   height: 100%;
   max-width: 547px;
+  min-width: 547px;
+  margin-right: 42px;
 }
 
 .col-news-title p {
@@ -438,10 +447,12 @@ header {
 
 .next {
   text-align: right;
+  cursor: pointer;
 }
 
 .prev {
   text-align: left;
+  cursor: pointer;
 }
 
 #arrow-news img:hover {

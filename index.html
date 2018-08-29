@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Oswald:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -184,6 +185,7 @@
 					</div>
 				</div>
 				<div class="container-news">
+					<div id="slideshow">
 						<div class="col-news">
 							<div class="col-news-title">
 								<p>Благотворительная акция ко Дню Матери</p>
@@ -219,12 +221,83 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-news">
+							<div class="col-news-title">
+								<p>Благотворительная акция ко Дню Матери</p>
+								<div class="col-news-body">
+										<div class="img-news">
+											<img src="img/den-materi.png" alt="Новость. День матери">
+										</div>
+
+										<p class="news-text">С 1 по 26 ноября социальным отделом Нижнетагильской епархии проводится благотворительная акция «День матери». Она организована по благословению епископа Нижнетагильского и Невьянского Иннокентия при поддержке благотворительного фонда «Ковчег».</p>
+										<div class="calend">
+											<img src="img/basic_calendar1.png" alt="Календарь">
+											<p class="date">13.11.2017</p>
+										</div>
+										<a href="#" class="news-next">Читать полностью</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-news">
+							<div class="col-news-title">
+								<p>Акция «Собрался в школу – помоги другому!» помогла еще 23 семьям</p>
+								<div class="col-news-body">
+										<div class="img-news">
+											<img src="img/school.png" alt="Новость. Акция собрался в школу">
+										</div>
+										<p class="news-text">Специально для малообеспеченных семей, состоящих на учете в Социально-реабилитационном центре для несовершеннолетних Тагилстроевского района и Отделении медико-социальной помощи при детской поликлинике, была продленаСпециально для малообеспеченных семей, состоящих на учете в Социально-реабилитационном центре для несовершеннолетних Тагилстроевского района и Отделении медико-социальной помощи при детской поликлинике, была продлена...</p>
+										<div class="calend">
+											<img src="img/basic_calendar1.png" alt="Календарь">
+											<p class="date">22.09.2017</p>
+										</div>
+										<a href="#" class="news-next">Читать полностью</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-news">
+							<div class="col-news-title">
+								<p>Благотворительная акция ко Дню Матери</p>
+								<div class="col-news-body">
+										<div class="img-news">
+											<img src="img/den-materi.png" alt="Новость. День матери">
+										</div>
+
+										<p class="news-text">С 1 по 26 ноября социальным отделом Нижнетагильской епархии проводится благотворительная акция «День матери». Она организована по благословению епископа Нижнетагильского и Невьянского Иннокентия при поддержке благотворительного фонда «Ковчег».</p>
+										<div class="calend">
+											<img src="img/basic_calendar1.png" alt="Календарь">
+											<p class="date">13.11.2017</p>
+										</div>
+										<a href="#" class="news-next">Читать полностью</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-news">
+							<div class="col-news-title">
+								<p>Акция «Собрался в школу – помоги другому!» помогла еще 23 семьям</p>
+								<div class="col-news-body">
+										<div class="img-news">
+											<img src="img/school.png" alt="Новость. Акция собрался в школу">
+										</div>
+										<p class="news-text">Специально для малообеспеченных семей, состоящих на учете в Социально-реабилитационном центре для несовершеннолетних Тагилстроевского района и Отделении медико-социальной помощи при детской поликлинике, была продленаСпециально для малообеспеченных семей, состоящих на учете в Социально-реабилитационном центре для несовершеннолетних Тагилстроевского района и Отделении медико-социальной помощи при детской поликлинике, была продлена...</p>
+										<div class="calend">
+											<img src="img/basic_calendar1.png" alt="Календарь">
+											<p class="date">22.09.2017</p>
+										</div>
+										<a href="#" class="news-next">Читать полностью</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="container" >
 					<div class="row" id="arrow-news">
-						<div class="col-lg-1 prev"><a href="#"><img src="img/list_leftt_icon.png" alt="Далее"></a></div>
+						<div class="col-lg-1 prev" id="prev"><img src="img/list_leftt_icon.png" alt="Далее"></div>
 						<div class="col-lg-10"></div>
-						<div class="col-lg-1 next"><a href="#"><img src="img/list_right_icon.png" alt="Назад"></a></div>
+						<div class="col-lg-1 next" id="next"><img src="img/list_right_icon.png" alt="Назад"></div>
 					</div>
 					<div class="row btn-row">
 						<div class="col-lg-12"><a href="#" class="btn-light" id="btn-news">Читать все новости</a></div>
@@ -347,6 +420,7 @@
 			new WOW().init();
 </script>
 			<script src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/slideshow.js"></script>
 			<script>
 			$(function() {
   $('a[href*=#]:not([href=#])').click(function() {
