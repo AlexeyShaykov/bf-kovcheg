@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+  #logo-2 {
+    display: inline-block;
+  }
+
+  #logo-3 {
+    display: none;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  #projects {
+    display: none;
+  }
+
+  #slider {
+    display: flex;
+  }
+
+  .nav-col {
+    overflow: hidden;
+  }
+
+  .nav-col ul {
+    display: none;
+  }
+
+  .nav-col label.toggle-nav {
+    display: block;
+  }
+}

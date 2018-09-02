@@ -1,0 +1,12 @@
+@media (max-width: 1200px) {
+  .section-title p:before {
+    left: 24%;
+  }
+
+  .section-title p:after {
+    right: 25.5%;
+  }
+  #slideshow {
+    max-width: 560px;
+  }
+}
