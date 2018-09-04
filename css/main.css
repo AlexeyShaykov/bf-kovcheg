@@ -9,6 +9,10 @@
   display: flex;
 }
 
+.logo-line-tablete {
+  display: none;
+}
+
 header {
   background: url('../img/firstscreen_bg.jpg');
   height: 720px;

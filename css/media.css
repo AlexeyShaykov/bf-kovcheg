@@ -9,4 +9,7 @@
   #slideshow {
     max-width: 560px;
   }
+  .footer .btn-footer {
+    padding: 17px 25px;
+  }
 }

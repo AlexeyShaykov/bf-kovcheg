@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #logo-2 {
     display: inline-block;
   }
@@ -10,7 +10,41 @@
   .logo {
     text-align: center;
   }
+  /* .section-title p:before {
+    left: 6%;
+  }
 
+  .section-title p:after {
+    right: 6.5%;
+  } */
+
+  #our-news {
+    display: none;
+  }
+
+  .logo-line-tablete {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #006666;
+  }
+  .logo-line {
+    display: none;
+  }
+  .logo-line-tablete__logo {
+    width: 30%;
+  }
+
+  .logo-line-tablete__logo:last-child img {
+    margin-left: 30px;
+  }
+  .slide-1 p {
+    max-width: 600px;
+    margin: auto;
+  }
+  .footer .btn-footer {
+    padding: 17px 46px;
+  }
+  /*
   #projects {
     display: none;
   }
@@ -29,5 +63,5 @@
 
   .nav-col label.toggle-nav {
     display: block;
-  }
+  } */
 }
