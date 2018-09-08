@@ -1,0 +1,112 @@
+@media (max-width: 420px) {
+  .logo-line-tablete {
+    max-width: 270px;
+    margin: auto;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  .logo-line-tablete {
+    flex-direction: column;
+  }
+  .mobile-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .tablete-logo {
+    display: none !important;
+  }
+  .logo-line-tablete__logo img {
+    width: 100%;
+  }
+  .logo-line-tablete__logo:last-child img {
+    margin-left: 0px;
+  }
+  .header-subtitle-1,
+  .header-subtitle-2 {
+    font-size: 12px;
+  }
+  .header-title {
+    font-size: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .nav-col {
+    display: none;
+  }
+  .slide-1 p {
+    font-size: 12px;
+    line-height: 20px;
+    max-width: fit-content;
+    padding: 50px 0;
+  }
+  .btn-dark {
+    font-size: 15px;
+    padding: 14px 30px;
+  }
+  header {
+    height: 470px;
+  }
+  .section-title p:before,
+  .section-title p:after {
+    display: none;
+  }
+  .section-title p {
+    font-size: 22px;
+  }
+  .volonteer-subtitle p {
+    font-size: 17px;
+  }
+  .volonteer-text p {
+    font-size: 14px;
+  }
+  .help-img {
+    margin: auto;
+    margin-top: 24px;
+  }
+  .help-text {
+    padding-right: 15px;
+    font-size: 16px;
+  }
+  .container-sponsor {
+    margin-top: 16px;
+  }
+  .sponsor .sponsor-img {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .sponsor-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sponsor {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sponsor .sponsor-img img {
+    width: 90%;
+    margin-left: 7px;
+  }
+  .sponsor .sponsor-text {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-logo img {
+    width: 40%;
+    padding-bottom: 35px;
+  }
+  .footer-logo img:first-child {
+    margin-right: 50px;
+  }
+  .footer-logo img:last-child {
+    width: 60%;
+  }
+}

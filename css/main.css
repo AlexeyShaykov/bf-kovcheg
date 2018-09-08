@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.mobile-logos {
+  display: none;
+}
+
 #slideshow {
   max-width: 1136px;
   height: auto;
