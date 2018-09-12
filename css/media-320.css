@@ -1,4 +1,51 @@
 @media (max-width: 420px) {
+  #projects .row.projects-row {
+    display: none;
+  }
+  #projects #slideshow {
+    display: flex;
+  }
+  #projects .nav-pr-btn {
+    display: block;
+  }
+
+  #slideshow {
+    max-width: 200px;
+    margin: auto;
+  }
+  .project-body {
+    padding: 12px;
+    margin-right: 24px;
+    min-width: 200px;
+    user-select: none;
+    pointer-events: none;
+  }
+  .nav-pr-btn {
+    position: absolute;
+    top: 50%;
+  }
+  #next {
+    right: 0;
+  }
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .btn-light {
+    padding: 14px 54px;
+  }
+  .btn-row {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+  .projects {
+    padding-bottom: 0px;
+    position: relative;
+    margin-top: 32px;
+  }
+  .help-text p:last-child {
+    padding-bottom: 0px;
+  }
   .logo-line-tablete {
     max-width: 270px;
     margin: auto;
@@ -53,6 +100,7 @@
   }
   .section-title p {
     font-size: 22px;
+    margin-top: 32px;
   }
   .volonteer-subtitle p {
     font-size: 17px;
@@ -70,28 +118,33 @@
   }
   .container-sponsor {
     margin-top: 16px;
+    padding: 0 24px;
+    margin-bottom: 8px;
   }
   .sponsor .sponsor-img {
     width: 100%;
     margin-right: 0px;
+    text-align: center;
+    margin-top: 8px;
   }
   .sponsor-row {
     margin-left: 0;
     margin-right: 0;
   }
   .sponsor {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 12px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 24px;
   }
   .sponsor .sponsor-img img {
-    width: 90%;
-    margin-left: 7px;
+    width: 60%;
   }
   .sponsor .sponsor-text {
     width: 100%;
     padding-left: 0px;
     margin-top: 16px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 20px;
   }
   .footer-logo {

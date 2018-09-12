@@ -12,6 +12,12 @@
   overflow: hidden;
   display: flex;
 }
+#projects #slideshow {
+  display: none;
+}
+#projects .nav-pr-btn {
+  display: none;
+}
 
 .logo-line-tablete {
   display: none;
