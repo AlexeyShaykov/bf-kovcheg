@@ -5,11 +5,11 @@ $(document).ready(() => {
   const dots = [
     ...slider.parentNode.getElementsByClassName('slider__points__item')
   ];
-  // dots.forEach(el => {
-  //   el.addEventListener('click', () => {
-  //     changeSlide('next');
-  //   });
-  // });
+  dots.forEach((el, index) => {
+    el.addEventListener('click', () => {
+      setSlide(index);
+    });
+  });
 
   let i = 0,
     x0 = null,
@@ -20,6 +20,10 @@ $(document).ready(() => {
     fin,
     rID = null,
     anf;
+
+  let shift = 4;
+  // + shift * slide_number
+  if (window.innerWidth > 1200) shift = 15;
 
   slider.addEventListener('mousedown', lock, false);
   slider.addEventListener('touchstart', lock, false);
@@ -46,6 +50,21 @@ $(document).ready(() => {
     }
   }
 
+  const setSlide = slideNum => {
+    if (slideNum === 0) {
+      scrollToZero();
+    } else {
+      $(slider).animate(
+        {
+          scrollLeft: slide_width * slideNum + shift * slideNum
+        },
+        500
+      );
+      changeActiveDot(slideNum);
+      slide_number = slideNum + 1;
+    }
+  };
+
   const changeActiveDot = slideNum => {
     if (dots.length === 0) return;
     dots.forEach(el => {
@@ -65,21 +84,11 @@ $(document).ready(() => {
     if (side === 'prev') {
       slide_number -= 2;
       if (slide_number <= 0) {
-        $(slider).animate(
-          {
-            scrollLeft: 0
-          },
-          500
-        );
-        slide_number = 1;
-        changeActiveDot(0);
+        scrollToZero();
         return;
       }
     }
     if (slide_number < NUMBER_OF_SLIDES) {
-      let shift = 4;
-      // + shift * slide_number
-      if (window.innerWidth > 1200) shift = 15;
       $(slider).animate(
         {
           scrollLeft: slide_width * slide_number + shift * slide_number
@@ -91,16 +100,19 @@ $(document).ready(() => {
         slide_number++;
       }
     } else {
-      $(slider).animate(
-        {
-          scrollLeft: 0
-        },
-        500
-      );
-      slide_number = 1;
-      changeActiveDot(0);
+      scrollToZero();
     }
   };
+  function scrollToZero() {
+    $(slider).animate(
+      {
+        scrollLeft: 0
+      },
+      500
+    );
+    slide_number = 1;
+    changeActiveDot(0);
+  }
   const nexts = [...document.querySelectorAll('#next')];
   nexts.forEach(el => {
     el.addEventListener('click', () => {
