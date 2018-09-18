@@ -6,6 +6,10 @@
   display: none;
 }
 
+.slider__points {
+  display: none;
+}
+
 #slideshow {
   max-width: 1136px;
   height: auto;
@@ -625,6 +629,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.9px;
   width: 60%;
+  display: block !important;
 }
 
 .sponsor .sponsor-img {

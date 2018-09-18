@@ -1,8 +1,15 @@
 $(document).ready(() => {
   const sliders = [...document.querySelectorAll('#slideshow')];
   const slider = sliders.filter(el => el.clientWidth > 0)[0];
-  console.log(slider);
   if (!slider) return;
+  const dots = [
+    ...slider.parentNode.getElementsByClassName('slider__points__item')
+  ];
+  // dots.forEach(el => {
+  //   el.addEventListener('click', () => {
+  //     changeSlide('next');
+  //   });
+  // });
 
   let i = 0,
     x0 = null,
@@ -39,6 +46,15 @@ $(document).ready(() => {
     }
   }
 
+  const changeActiveDot = slideNum => {
+    if (dots.length === 0) return;
+    dots.forEach(el => {
+      el.classList.remove('slider__points__item--active');
+    });
+    const active = dots[slideNum];
+    active.classList.add('slider__points__item--active');
+  };
+
   let NUMBER_OF_SLIDES = slider.getElementsByClassName('slide-item').length / 2;
   if (window.innerWidth < 1200) {
     NUMBER_OF_SLIDES *= 2;
@@ -56,6 +72,7 @@ $(document).ready(() => {
           500
         );
         slide_number = 1;
+        changeActiveDot(0);
         return;
       }
     }
@@ -69,6 +86,7 @@ $(document).ready(() => {
         },
         500
       );
+      changeActiveDot(slide_number);
       if (side === 'next') {
         slide_number++;
       }
@@ -80,6 +98,7 @@ $(document).ready(() => {
         500
       );
       slide_number = 1;
+      changeActiveDot(0);
     }
   };
   const nexts = [...document.querySelectorAll('#next')];
