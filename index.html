@@ -54,8 +54,6 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12 nav-col">
-					<input type="checkbox" id="nav-check" name="toggle" class="toggle-nav">
-					<label for="nav-check" class="toggle-nav"><img src="img/list_leftt_icon.png" alt="">меню</label>
 					<nav id="main-nav">
 						<ul>
 							<li><a href="#">главная</a></li>
@@ -76,7 +74,25 @@
 						</nav>
 					</div>
 				</div>
-				<div class="row">
+				<div class="mobile-menu">
+						<div class="mobile-menu__controls">
+							<img src="img/list_leftt_icon.png" alt="">
+							<div class="mobile-menu__controls__text">
+								меню
+							</div>
+						</div>
+						<div class="mobile-menu__items">
+							<ul>
+								<li><a href="#">главная</a></li>
+								<li><a id="menu-projects" href="#our-projects">наши проекты</a></li>
+								<li><a href="#our-news">новости</a></li>
+								<li><a href="#volunteer">волонтёрство</a></li>
+								<li><a href="#">о нас</a></li>
+								<li><a href="#help-info">как помочь</a></li>
+							</ul>
+						</div>
+				</div>
+				<div class="row header-paragraph">
 					<div class="col-lg-12 slide-1">
 						<p>каждое проявление милосердия и сострадания
 							<br>
@@ -430,9 +446,12 @@
 						<img src="img/Blago_Logo.png" alt="Благо.ру">
 					</div>
 					<div class="col-lg-6 col-md-5 col-sm-12 footer-center">
-						<p class="footer-title">благотворительный фонд «ковчег»</p>
+						<p class="footer-title">
+							благотворительный фонд «ковчег»
+							<div>ИНН 6623996398 и ОГРН 1126600003859</div>
+						</p>
 						<p class="footer-subtitle">Юридический адрес:</p>
-						<p class="footer-text">622016, РФ, Свердловская область, г. Нижний Тагил, ул. Красноармейская, д. 165</p>
+						<p class="footer-text">622000, РФ, Свердловская область, г. Нижний Тагил, ул. Металлургов, 32</p>
 						<p class="footer-subtitle">Почтовый адрес:</p>
 						<p class="footer-text">622000, РФ, Свердловская область, г. Нижний Тагил, ул. Металлургов, 32 (территория Прихода во имя св. прп. Сергия Радонежского, г. Нижний Тагил, Т/С)</p>
 						<p class="footer-subtitle-1">Телефон:</p>
@@ -465,18 +484,19 @@
 				</div>
 				<div class="row footer-copy">
 					<div class="col-11">
-						<p class="footer-text">&copy 2016-2017 Нижнетагильская епархия Русской Православной Церкви</p>
+						<p class="footer-text">&copy 2016-2018 Нижнетагильская епархия Русской Православной Церкви</p>
 					</div>
 					<div class="col-1"><a href="#header"><img src="img/on_top_icon.png" alt=""></a></div>
 				</div></div>
 
 			</footer>
-			<script src="js/wow.min.js"></script>
+			<!-- <script src="js/wow.min.js"></script>
 			<script>
 			new WOW().init();
-</script>
+</script> -->
 			<script src="js/jquery.min.js"></script>
 			<script type="text/javascript" src="js/slideshow.js"></script>
+			<script type="text/javascript" src="js/mobile-menu.js"></script>
 			<script>
 			$(function() {
   $('a[href*=#]:not([href=#])').click(function() {

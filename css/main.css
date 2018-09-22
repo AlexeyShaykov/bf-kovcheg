@@ -10,6 +10,10 @@
   display: none;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 #slideshow {
   max-width: 1136px;
   height: auto;
@@ -672,6 +676,7 @@ header {
 .footer-title {
   font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
 
 .footer-subtitle {
