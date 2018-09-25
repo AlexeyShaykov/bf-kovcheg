@@ -96,6 +96,9 @@
   #next {
     right: 0;
   }
+  #our-projects {
+    padding-bottom: 32px;
+  }
   .container {
     padding-right: 24px;
     padding-left: 24px;
@@ -252,5 +255,35 @@
   }
   .footer .btn-footer {
     padding: 17px 17px;
+  }
+  #our-news {
+    display: block;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 8px;
+  }
+  #our-news #slideshow {
+    display: none;
+  }
+  .container-news {
+    margin-top: 24px;
+  }
+  .col-news {
+    min-width: auto;
+    max-width: none;
+    margin-right: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    margin-right: 0px !important;
+    margin-bottom: 16px;
+  }
+  .col-news-title p {
+    height: auto;
+  }
+  #btn-news {
+    font-size: 15px;
+    padding: 14px 30px;
   }
 }
