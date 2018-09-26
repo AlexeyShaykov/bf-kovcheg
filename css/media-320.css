@@ -286,4 +286,7 @@
     font-size: 15px;
     padding: 14px 30px;
   }
+  .mobile-news {
+    display: block;
+  }
 }

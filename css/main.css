@@ -771,3 +771,6 @@ header {
 .nav-col [type='checkbox'] {
   display: none;
 }
+.mobile-news {
+  display: none;
+}
