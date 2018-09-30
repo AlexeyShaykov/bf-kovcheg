@@ -470,15 +470,22 @@ header {
 .next {
   text-align: right;
   cursor: pointer;
+  width: 60px;
 }
 
 .prev {
   text-align: left;
   cursor: pointer;
+  width: 60px;
 }
 
 #arrow-news img:hover {
   opacity: 0.5;
+}
+
+#arrow-news {
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn-row {

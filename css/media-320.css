@@ -88,6 +88,7 @@
     min-width: 200px;
     user-select: none;
     pointer-events: none;
+    margin-top: 0px;
   }
   .nav-pr-btn {
     position: absolute;

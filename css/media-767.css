@@ -44,24 +44,28 @@
   .footer .btn-footer {
     padding: 17px 46px;
   }
-  /*
-  #projects {
+  .section-title p:before {
+    left: 6%;
+  }
+  .section-title p:after {
+    right: 6.5%;
+  }
+  .project-body {
+    margin-top: 16px;
+  }
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-logo img {
+    width: 30%;
+  }
+  .section-title p:before {
     display: none;
   }
-
-  #slider {
-    display: flex;
-  }
-
-  .nav-col {
-    overflow: hidden;
-  }
-
-  .nav-col ul {
+  .section-title p:after {
     display: none;
   }
-
-  .nav-col label.toggle-nav {
-    display: block;
-  } */
 }
