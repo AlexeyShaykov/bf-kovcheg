@@ -279,6 +279,7 @@
     margin: auto;
     margin-right: 0px !important;
     margin-bottom: 16px;
+    max-height: 337px;
   }
   .col-news-title p {
     height: auto;

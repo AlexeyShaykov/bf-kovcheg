@@ -10,17 +10,6 @@
   .logo {
     text-align: center;
   }
-  /* .section-title p:before {
-    left: 6%;
-  }
-
-  .section-title p:after {
-    right: 6.5%;
-  } */
-
-  #our-news {
-    display: none;
-  }
 
   .logo-line-tablete {
     display: flex;
@@ -66,6 +55,14 @@
     display: none;
   }
   .section-title p:after {
+    display: none;
+  }
+}
+@media (max-width: 608px) {
+  #our-news {
+    display: none;
+  }
+  #arrow-news {
     display: none;
   }
 }
