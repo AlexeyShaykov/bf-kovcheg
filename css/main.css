@@ -121,7 +121,7 @@ header {
 }
 
 #main-nav ul li a:hover {
-  border-bottom: 2px solid #cc3300;
+  /* border-bottom: 2px solid #cc3300; */
   color: #cc3300;
 }
 #menu-projects:hover:after {
