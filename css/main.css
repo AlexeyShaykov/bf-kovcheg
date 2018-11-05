@@ -115,17 +115,20 @@ header {
   display: block;
   text-transform: uppercase;
   box-sizing: border-box;
-  height: 36px;
+  height: 35px;
   transition: all 300ms ease;
   /*равно ul li ul {top}*/
 }
 
 #main-nav ul li a:hover {
-  /* border-bottom: 2px solid #cc3300; */
   color: #cc3300;
 }
+
 #menu-projects:hover:after {
   content: url('../img/close.png');
+}
+#menu-projects:hover {
+  border-bottom: 2px solid #cc3300;
 }
 
 #menu-projects:after {
@@ -135,11 +138,15 @@ header {
   right: 30px;
 }
 
+/* #menu-projects:hover {
+  color: #cc3300;
+} */
+
 #main-nav ul li ul {
   position: absolute;
   top: 36px;
   /*равно ul li a {height}*/
-  left: 0px;
+  right: 0px;
   display: none;
   width: auto;
   background-color: #e6e9e9;
@@ -154,7 +161,7 @@ header {
   text-align: left;
 }
 
-#main-nav ul li ul li a {
+#main-nav ul li ul li div {
   display: block;
   text-transform: uppercase;
   color: #333333;
@@ -166,11 +173,11 @@ header {
   box-sizing: border-box;
 }
 
-#main-nav ul li ul li a:hover {
+#main-nav ul li ul li div:hover {
   color: #cc3300;
 }
 
-#main-nav ul li ul li:last-child a {
+#main-nav ul li ul li:last-child div {
   padding: 0;
 }
 

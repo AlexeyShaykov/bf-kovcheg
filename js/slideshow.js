@@ -1,14 +1,38 @@
 $(document).ready(() => {
   const sliders = [...document.querySelectorAll('#slideshow')];
+  const menu = document.getElementsByClassName('mobile-menu')[0];
   const slider = sliders.filter(el => el.clientWidth > 0)[0];
   if (!slider) return;
   const dots = [
     ...slider.parentNode.getElementsByClassName('slider__points__item')
   ];
+  const subPr = document.getElementById('mobile-sub-projects');
+  const subPrItems = [...subPr.querySelectorAll('div')];
+
   dots.forEach((el, index) => {
     el.addEventListener('click', () => {
       setSlide(index);
     });
+  });
+
+  subPrItems.forEach(el => {
+    el.addEventListener(
+      'click',
+      e => {
+        const ev = e || window.event;
+        menu.removeAttribute('style');
+        subPr.style.display = 'none';
+        menu.classList.remove('mobile-menu--open');
+        $([document.documentElement, document.body]).animate(
+          {
+            scrollTop: $('#our-projects').offset().top - 150
+          },
+          500
+        );
+        setSlide(parseInt(ev.target.id) - 1);
+      },
+      false
+    );
   });
 
   let i = 0,
