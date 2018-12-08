@@ -109,6 +109,8 @@
   .help-img {
     padding: 0;
     width: 215px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .help-text {
@@ -212,6 +214,7 @@
   #btn-footer-right {
     display: none;
   }
+
   .section-title p:before {
     left: 17%;
   }
@@ -219,6 +222,7 @@
   .section-title p:after {
     right: 17.5%;
   }
+
   #menu-projects:after {
     right: 19px;
   }

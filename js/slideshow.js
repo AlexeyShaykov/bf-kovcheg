@@ -23,8 +23,7 @@ $(document).ready(() => {
         menu.removeAttribute('style');
         subPr.style.display = 'none';
         menu.classList.remove('mobile-menu--open');
-        $([document.documentElement, document.body]).animate(
-          {
+        $([document.documentElement, document.body]).animate({
             scrollTop: $('#our-projects').offset().top - 150
           },
           500
@@ -61,10 +60,12 @@ $(document).ready(() => {
   function unify(e) {
     return e.changedTouches ? e.changedTouches[0] : e;
   }
+
   function lock(e) {
     x0 = unify(e).clientX;
     locked = true;
   }
+
   function move(e) {
     x1 = unify(e).clientX;
     if (x0 > x1) {
@@ -78,8 +79,7 @@ $(document).ready(() => {
     if (slideNum === 0) {
       scrollToZero();
     } else {
-      $(slider).animate(
-        {
+      $(slider).animate({
           scrollLeft: slide_width * slideNum + shift * slideNum
         },
         500
@@ -113,8 +113,7 @@ $(document).ready(() => {
       }
     }
     if (slide_number < NUMBER_OF_SLIDES) {
-      $(slider).animate(
-        {
+      $(slider).animate({
           scrollLeft: slide_width * slide_number + shift * slide_number
         },
         500
@@ -127,9 +126,9 @@ $(document).ready(() => {
       scrollToZero();
     }
   };
+
   function scrollToZero() {
-    $(slider).animate(
-      {
+    $(slider).animate({
         scrollLeft: 0
       },
       500
